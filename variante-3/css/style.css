@@ -398,6 +398,31 @@ h3 { font-size: 1.1rem; }
 }
 .contact-info dt { font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--red-deep); }
 .contact-info dd a:hover { color: var(--red); }
+.emergency {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin-top: 22px;
+  padding: 14px 18px;
+  background: var(--burgundy);
+  border: 1.5px solid var(--ink);
+  color: var(--paper);
+  transition: background-color 0.15s var(--ease);
+}
+.emergency:hover { background: var(--red-deep); }
+.emergency-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--ink);
+  padding: 4px 8px;
+}
+.emergency-num { font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; }
+.emergency-sub { font-family: var(--font-mono); font-size: 0.68rem; color: rgba(248, 246, 241, 0.8); width: 100%; }
+
 .contact-info .actions { margin-top: 26px; }
 .contact-map { border: 1.5px solid var(--ink); overflow: hidden; height: 420px; }
 .contact-map iframe { width: 100%; height: 100%; border: 0; display: block; filter: grayscale(1) contrast(1.05); }
@@ -410,6 +435,7 @@ h3 { font-size: 1.1rem; }
 .footer-links a { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(248, 246, 241, 0.65); }
 .footer-links a:hover { color: var(--paper); }
 .footer-meta { width: 100%; font-family: var(--font-mono); font-size: 0.72rem; line-height: 1.9; color: rgba(248, 246, 241, 0.5); }
+.footer-meta a:hover { color: var(--paper); }
 
 /* ===== Reveal ===== */
 .reveal { opacity: 0; transform: translateY(13px); transition: opacity 0.65s var(--ease), transform 0.65s var(--ease); }
